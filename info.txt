@@ -1,0 +1,80 @@
+
+Name:
+	SocialShare Buttons
+	Extension Key :  
+
+Brief Description:
+	
+Detail Description:
+	
+	Lets your customers Like, Share Tweet and +1 your products on the 3 major social networks
+	<p>
+	This extension adds a Facebook, Twitter and Google+1 Social Share Buttons Bar 
+	<br />
+	Plus Open-Graph tags for full social support in all your product pages
+	</p>
+	
+	<p>
+	<h2>Upgrade:</h2>
+	If you already installed this extension consider upgrading, New version includes bug fixes And Localization for German Spanish and French
+	<br />
+	Follow Instructions For Upgrade
+	</p>
+	<p>
+	<h2>Instructions:</h2>
+		<li>IMPORTANT: First Make Sure You Installed SocialShare - Open Graph Extention <a href="http://www.magentocommerce.com/magento-connect/catalog/product/view/id/14560/s/socialshare-open-graph-3111/">From HERE</a>
+	
+		<li>1. Install the Extention</li>
+		<li>2. Clear Cache, log out and back in</li>
+		<li>3. Navigate to System -> Configuration -> Social Share 
+			<br /> Get your Facebook Application ID from  http://www.facebook.com/developers/createapp.php
+			<br /> Enable Social Share 
+		</li>
+		<li>4. Edit app/design/frontend/[package]/[theme]/template/catalog/product/view.phtml and insert the following PHP code:
+			<br />
+			&lt;?php echo $this->getLayout()-&gt;createBlock('core/template')-&gt;setTemplate('socialshare/socialbar.phtml')-&gt;toHtml(); ?&gt;
+			<br /> * if the file doesn't exist copy it from default or base template 
+		</li>
+		<li>5. Enjoy it and feel free to leave feedback</li>
+	</p>
+
+	BTW, you can change the buttons width by adding css ruls
+
+----------------------------
+
+Hi  
+Since apparently now the site is now blocking me from adding code in the Overview sections so I'll add the code here:  
+<?php echo $this->getLayout()->createBlock('core/template')->setTemplate('socialshare/socialbar.phtml')->toHtml();?>
+
+To use shirtdesigner place the following text in your CMS-page: 
+{{block type="core/template" name="snw_designer" template="socialshare/socialbar.phtml"}}
+
+----------------------------
+
+
+
+
+#1 Installation:
+
+Copy all files into your magento directory and turn Magento cache off.
+
+Set Up New Facebook Application at http://www.facebook.com/developers/createapp.php
+
+Navigate to System > Configuration > Social Share > FaceBook Like Button and enable extension for any store you need.
+
+Configure FaceBook Like Button module according to your needs.
+
+
+Code listed bellow should should be added to .phtml file in order to display Facebook like button. For exampe app/design/frontend/[package]/[theme]/template/catalog/product/view.phtml.
+
+That's all. Navigate to your products page and check how your store looks.
+
+#2 Configuration
+
+General:
+
+Enabled - enable or disable extension for separate store;
+Application id - Facebook applicate id;
+
+
+If you have any problems with extension installation please contact us at ------------
