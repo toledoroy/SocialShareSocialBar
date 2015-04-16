@@ -10,7 +10,7 @@
         <layout>
             <updates>
                 <SocialShare>
-                    <file>SocialShare.xml</file>
+                    <file>socialshare/SocialShare.xml</file>
                 </SocialShare>
             </updates>
         </layout>
