@@ -16,9 +16,9 @@
 	<div class="social_buttons withcount">    
 		<?php if (Mage::getStoreConfig('socialshare/general/facebook_btn')) : ?>
 		<!-- Facebook -->
-		<div class="facebookContainer">
+		<span class="facebookContainer">
 			<div class="fb-like" data-href="<?php echo Mage::helper('core/url')->getCurrentUrl(); ?>" data-send="false" data-layout="button_count" data-width="150" data-show-faces="false"></div>
-		</div>
+		</span>
 		<?php endif; ?>
 		
 		<?php if (Mage::getStoreConfig('socialshare/general/twitter_btn')) : ?>
@@ -26,7 +26,7 @@
 		<div class="twitterContainer">
 			<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<?php echo Mage::getStoreConfig('socialshare/general/twitter_acc'); ?>">Tweet</a>
 		</div>
-		<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>    
+		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>    
 		<?php endif; ?>
 		
 		<?php if (Mage::getStoreConfig('socialshare/general/google_btn')) : ?>
