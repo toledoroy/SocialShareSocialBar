@@ -6,48 +6,45 @@ Name:
 Brief Description:
 	
 Detail Description:
-	
-	Lets your customers Like, Share Tweet and +1 your products on the 3 major social networks
 	<p>
-	This extension adds a Facebook, Twitter and Google+1 Social Share Buttons Bar 
-	<br />
-	Plus Open-Graph tags for full social support in all your product pages
+		Give your customers a way to connect, share, and brag a little! This incredibly useful extension adds an easy access Share Buttons Bar to your page for the 4 most popular social networks; Facebook, Twitter, Google+1, and Pinterest. 
 	</p>
 	
+	<h3>Demo</h3>
 	<p>
-	<h2>Upgrade:</h2>
-	If you already installed this extension consider upgrading, New version includes bug fixes And Localization for German Spanish and French
-	<br />
-	Follow Instructions For Upgrade
-	</p>
-	<p>
-	<h2>Instructions:</h2>
-		<li>IMPORTANT: First Make Sure You Installed SocialShare - Open Graph Extention <a href="http://www.magentocommerce.com/magento-connect/catalog/product/view/id/14560/s/socialshare-open-graph-3111/">From HERE</a>
-	
-		<li>1. Install the Extention</li>
-		<li>2. Clear Cache, log out and back in</li>
-		<li>3. Navigate to System -> Configuration -> Social Share 
-			<br /> Get your Facebook Application ID from  http://www.facebook.com/developers/createapp.php
-			<br /> Enable Social Share 
-		</li>
-		<li>4. Edit app/design/frontend/[package]/[theme]/template/catalog/product/view.phtml and insert the following PHP code:
-			<br />
-			&lt;?php echo $this->getLayout()-&gt;createBlock('core/template')-&gt;setTemplate('socialshare/socialbar.phtml')-&gt;toHtml(); ?&gt;
-			<br /> * if the file doesn't exist copy it from default or base template 
-		</li>
-		<li>5. Enjoy it and feel free to leave feedback</li>
+		See <a href="http://store.virtual-brick.com/socialshare-socialbar.html?utm_medium=magentoconnect&amp;utm_source=social_bar-Demo">Demo</a> on our store page
 	</p>
 
-	BTW, you can change the buttons width by adding css ruls
+	<p>
+		This extension adds a Facebook, Twitter, Pinterest, and Google+1 social share Buttons Bar ?includes localization support for English, German, Spanish, French, Dutch and <b>100</b> more languages.
+		<br /><br />
+		Two different versions of the Buttons Bar are now available, Buttons with count, or smaller buttons without counters 
+	</p>
+
+	<h3>Features</h3>
+	<p>
+		* New version released with full support of custom themes. 
+		<br />
+		* <a href="http://www.magentocommerce.com/magento-connect/socialshare-open-graph.html"> Magento OpenGraphTags</a> extension is no longer required, but for full multilengual support please install it as well. you can download it for <a href="http://www.magentocommerce.com/magento-connect/socialshare-open-graph.html">FREE</a>
+		<br />
+		* Each button can be enabled and disabled separately.
+		<br />
+		* Added CSS Classes for all elements for easy design modifications
+	</p>
+
+	<p>
+		<h3>Upgrade:</h3>
+		Upgrade Available!! <br /> Follow Instructions for Upgrade.
+	</p>
+
+	
+	
 
 ----------------------------
 
 Hi  
-Since apparently now the site is now blocking me from adding code in the Overview sections so I'll add the code here:  
+Since apparently now the site is blocking me from adding code in the Overview sections so I'll add the code here:  
 <?php echo $this->getLayout()->createBlock('core/template')->setTemplate('socialshare/socialbar.phtml')->toHtml();?>
-
-To use shirtdesigner place the following text in your CMS-page: 
-{{block type="core/template" name="snw_designer" template="socialshare/socialbar.phtml"}}
 
 ----------------------------
 
