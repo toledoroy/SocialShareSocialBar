@@ -1,3 +1,5 @@
+~Internal
+	Removed From Magento Marketplace: * Magento OpenGraphTags extension is no longer required, but for full multilingual support please install it as well. you can download it for FREE 
 
 Name:
 	SocialShare Buttons
