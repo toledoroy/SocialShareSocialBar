@@ -44,10 +44,17 @@
 		<?php endif; ?>
 		
 		<?php if (Mage::getStoreConfig('socialshare/general/pinter_btn')) : ?>
-		<?php $product = Mage::registry('current_product'); ?>
+		<?php
+		$data = "?url=".Mage::helper('core/url')->getCurrentUrl();
+		$product = Mage::registry('current_product'); 
+		if(isset($product) && is_object($product)){
+		    $data .= "&media=".$this->htmlEscape($product->getImageUrl());
+		    $data .= "&description=".$this->stripTags($product->getShortDescription());
+		}
+		?>
 		<!-- Pinterest -->
 		<div class="pinterestContainer">
-			<a href="//pinterest.com/pin/create/button/?url=<?php echo Mage::helper('core/url')->getCurrentUrl(); ?>&media=<?php echo $this->htmlEscape($product->getImageUrl());?>&description=<?php echo $this->stripTags($product->getShortDescription());?>" data-pin-do="buttonPin" data-pin-config="beside">
+			<a href="//pinterest.com/pin/create/button/<?php echo $data?>" data-pin-do="buttonPin" data-pin-config="beside">
 				<img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" />
 			</a>
 		</div>
@@ -85,10 +92,17 @@
 		<?php endif; ?>
 		
 		<?php if (Mage::getStoreConfig('socialshare/general/pinter_btn')) : ?>
-		<?php $product = Mage::registry('current_product'); ?>
+		<?php
+		$data = "?url=".Mage::helper('core/url')->getCurrentUrl();
+		$product = Mage::registry('current_product'); 
+		if(isset($product) && is_object($product)){
+		    $data .= "&media=".$this->htmlEscape($product->getImageUrl());
+		    $data .= "&description=".$this->stripTags($product->getShortDescription());
+		}
+		?>
 		<!-- Pinterest -->
 		<div class="pinterestContainer">
-			<a href="//pinterest.com/pin/create/button/?url=<?php echo Mage::helper('core/url')->getCurrentUrl(); ?>&media=<?php echo $this->htmlEscape($product->getImageUrl());?>&description=<?php echo $this->stripTags($product->getShortDescription());?>" data-pin-do="buttonPin" data-pin-config="none">
+			<a href="//pinterest.com/pin/create/button/<?php echo $data; ?>" data-pin-do="buttonPin" data-pin-config="none">
 				<img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" />
 			</a>
 		</div>
