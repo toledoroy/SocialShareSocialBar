@@ -9,16 +9,6 @@ This extension adds a Facebook, Twitter, Pinterest, and Google+1 social share Bu
 
 Two different layout are now available, Buttons with count, or smaller buttons without count and each individual button can be enabled or disabled separately.
 
-
-Installation 
-====================
-
-	1. Install the Extention
-	2. Clear Cache, log out and back in
-	3. Navigate to System -> Configuration -> Social Share -> Facebook Comments
-	4. Configure your comment Box and select the position to show it on
-	5. Enjoy it and feel free to leave feedback
-
 		
 Change Log	
 ====================
